@@ -11,6 +11,8 @@ beforeAll(() => {
     if (fs.existsSync(DATA_DIR)) {
         fs.rmSync(DATA_DIR, { recursive: true, force: true })
     }
+    // Recrear el directorio para el test (vital para evitar ENOENT)
+    fs.mkdirSync(DATA_DIR, { recursive: true })
 })
 
 afterAll(() => {

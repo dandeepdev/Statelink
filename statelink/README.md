@@ -95,7 +95,7 @@ In Statelink, **memory is persistence**. There is no separation between what the
 ## Quick Start (React)
 
 ```bash
-npm install statelink
+npm install statelink-core
 ```
 
 ### 0. The Adapter Setup (The Missing Link)
@@ -103,7 +103,7 @@ To make the library "speak the language" of your platform (Web, Node, or React N
 
 ```tsx
 // In your entry point (e.g., main.tsx / App.tsx)
-import { configureStorelink } from 'statelink/web';
+import { configureStorelink } from 'statelink-core/web'; 
 configureStorelink(); 
 ```
 
