@@ -5,11 +5,11 @@
   <p><b>Zero-Boilerplate Universal State Management</b></p>
   <p><i>Stop managing state. Let the state manage itself.</i></p>
 
-  [![npm version](https://badge.fury.io/js/statelink.svg)](https://badge.fury.io/js/statelink)
+  [![npm version](https://badge.fury.io/js/statelink-core.svg)](https://badge.fury.io/js/statelink-core)
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   <br /><br />
-  <a href="https://statelink-demo.vercel.app" target="_blank">
+  <a href="https://statelink-rho.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/🚀_Play_Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Play Live Demo" />
   </a>
   <br /><br />
