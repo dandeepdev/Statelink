@@ -1,0 +1,44 @@
+{
+  "name": "statelink",
+  "version": "1.0.0",
+  "description": "Zero-Boilerplate Universal State Management. Stop managing state, let the state manage itself.",
+  "author": "Dandeepdev",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./web": {
+      "types": "./dist/adapters/web/index.d.ts",
+      "import": "./dist/adapters/web/index.js",
+      "require": "./dist/adapters/web/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest run",
+    "release": "npm run test && npm run build && npm publish"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  },
+  "keywords": [
+    "state management",
+    "react",
+    "react native",
+    "offline-first",
+    "zero-boilerplate",
+    "universal",
+    "store",
+    "proxy"
+  ]
+}

@@ -1,0 +1,7 @@
+# No subir a NPM para mantener el paquete en pocos Kilobytes
+node_modules/
+tests/
+src/
+tsup.config.ts
+tsconfig.json
+.git/
