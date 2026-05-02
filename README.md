@@ -9,7 +9,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   <br /><br />
-  <a href="https://statelink-rho.vercel.app" target="_blank">
+  <a href="https://statelink-demo.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/🚀_Play_Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Play Live Demo" />
   </a>
   <br /><br />
@@ -95,7 +95,7 @@ In Statelink, **memory is persistence**. There is no separation between what the
 ## Quick Start (React)
 
 ```bash
-npm install statelink
+npm install statelink-core
 ```
 
 ### 0. The Adapter Setup (The Missing Link)
@@ -103,7 +103,7 @@ To make the library "speak the language" of your platform (Web, Node, or React N
 
 ```tsx
 // In your entry point (e.g., main.tsx / App.tsx)
-import { configureStorelink } from 'statelink/web';
+import { configureStorelink } from 'statelink-core/web'; 
 configureStorelink(); 
 ```
 
