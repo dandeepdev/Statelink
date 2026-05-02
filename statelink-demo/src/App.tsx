@@ -34,16 +34,16 @@ export default function App() {
                 <header className="editor-header">
                     <div className="logo">
                         <PenTool size={24} />
-                        <h2>La Forja</h2>
+                        <h2>The Forge</h2>
                     </div>
                     <span className="last-edited">
-                        Actualizado: {lastEdited.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'})}
+                        Last edited: {lastEdited.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'})}
                     </span>
                 </header>
                 
                 <textarea 
                     className="canvas"
-                    placeholder="Inmortaliza un pensamiento aquí..."
+                    placeholder="Immortalize a thought here..."
                     value={draft}
                     onChange={(e) => {
                         writerState.draft = e.target.value;
@@ -56,18 +56,18 @@ export default function App() {
                     <div className="metric">
                         <BookOpen size={16} className="metric-icon" />
                         <span className="value">{wordCount}</span>
-                        <span className="label">palabras</span>
+                        <span className="label">words</span>
                     </div>
                     <div className="metric">
                         <Clock size={16} className="metric-icon" />
                         <span className="value">{readingTimeSecs}s</span>
-                        <span className="label">lectura</span>
+                        <span className="label">read time</span>
                     </div>
                     
                     {isMemorable && (
                         <div className="badge pulse">
                             <Zap size={14} />
-                            Verso Memorable Detectado
+                            Memorable Verse Detected
                         </div>
                     )}
 
@@ -76,14 +76,14 @@ export default function App() {
                         onClick={handleSaveVerse}
                         disabled={!draft.trim()}
                     >
-                        Forjar Verso
+                        Forge Verse
                     </button>
                 </div>
             </main>
 
             <aside className="gallery-zone">
                 <div className="gallery-header">
-                    <h3>Versos Forjados</h3>
+                    <h3>Forged Verses</h3>
                     <span className="count">{savedVerses.size}</span>
                 </div>
                 
@@ -93,8 +93,8 @@ export default function App() {
                             if (savedVerses.size === 0) {
                                 return (
                                     <div className="empty-state">
-                                        <p>El silencio es tu lienzo.</p>
-                                        <p>Escribe algo a la izquierda para comenzar.</p>
+                                        <p>Silence is your canvas.</p>
+                                        <p>Write something on the left to begin.</p>
                                     </div>
                                 );
                             }
@@ -106,7 +106,7 @@ export default function App() {
                                     <button 
                                         className="delete-btn" 
                                         onClick={() => handleDeleteVerse(String(verse))}
-                                        title="Descartar verso"
+                                        title="Discard verse"
                                     >
                                         <Trash2 size={16} />
                                     </button>
